@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: map-get($colors, "logo-accent-footer");
+  color: map-get($colors, "logo-accent-header");
+  font-family: "Roboto400", sans-serif;
+  margin: 0;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /*outline: 2px solid tomato;*/
+}

@@ -1,0 +1,30 @@
+.logo {
+  display: inline-block;
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.footer-div {
+  display: block;
+  align-items: baseline;
+  display: flex;
+  margin: 0 auto 0 auto;
+}
+footer {
+  display: block;
+  display: flex;
+  background-color: map-get($colors, "header-footer-bg");
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .cont-footer {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 231px;
+  height: 132px;
+  margin-right: 70px;
+}
+.cont-footer > a {
+  display: block;
+}

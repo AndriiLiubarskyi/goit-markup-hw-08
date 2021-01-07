@@ -1,0 +1,12 @@
+.nav {
+  display: block;
+  display: flex;
+  padding-left: 0;
+  margin-left: 93px;
+  letter-spacing: $main-font-spacing;
+}
+.nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

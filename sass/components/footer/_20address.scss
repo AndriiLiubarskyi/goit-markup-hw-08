@@ -1,0 +1,33 @@
+address {
+  display: block;
+  width: 231px;
+  height: 81px;
+  margin-top: 20px;
+}
+.address-footer {
+  display: block;
+  letter-spacing: $main-font-spacing;
+  padding: 0;
+  margin: 0;
+}
+.address-footer a {
+  font-size: 14px;
+  font-weight: 400;
+  color: map-get($colors, "logo-accent-footer");
+  line-height: 1.71;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.address-footer .address-mail-tel {
+  color: map-get($colors, "contacts-color-footer");
+}
+.address-footer a:hover {
+  color: map-get($colors, "accent-color");
+}
+.address-footer li {
+  margin-top: 9px;
+}
+.address-footer li:first-child {
+  margin-top: 0;
+}

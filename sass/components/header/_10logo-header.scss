@@ -1,0 +1,38 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+.logo-web,
+.logo-studio,
+.logo-studiotwo {
+  letter-spacing: $main-font-spacing;
+  font-family: $logo-font;
+}
+.logo-web {
+  font-size: 26px;
+  /*font-weight: 700;*/
+  color: map-get($colors, "accent-color");
+}
+.logo-studio {
+  font-size: 26px;
+  /*font-weight: 700;*/
+  color: map-get($colors, "logo-accent-header");
+}
+.logo-studiotwo {
+  font-size: 26px;
+  /*font-weight: 700;*/
+  color: map-get($colors, "logo-accent-footer");
+}
+.navbox {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: center;
+}
+.one {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

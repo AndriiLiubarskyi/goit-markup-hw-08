@@ -1,0 +1,107 @@
+.link-current,
+.nav-mail-tel {
+  font-family: $primary-font;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 0px;
+}
+.nav li:not(:last-child) {
+  margin-right: 50px;
+}
+.nav-mail-tel {
+  display: block;
+  display: flex;
+  letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.nav-mail-tel li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.letter {
+  display: block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: map-get($colors, "secondary-text-color");
+  fill: currentColor;
+}
+.mail-letter {
+  display: block;
+  display: flex;
+  align-items: center;
+  width: 161px;
+  height: 16px;
+  color: map-get($colors, "secondary-text-color");
+}
+.nav-mail-tel a {
+  color: map-get($colors, "secondary-text-color");
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: map-get($colors, "accent-color");
+    fill: map-get($colors, "accent-color");
+  }
+}
+.tel-letter {
+  width: 142px;
+  height: 16px;
+}
+.vector {
+  display: block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: map-get($colors, "secondary-text-color");
+  fill: currentColor;
+}
+.nav a {
+  display: block;
+  font-size: 14px;
+  font-family: $primary-font;
+  font-weight: 500;
+  color: map-get($colors, "primary-text-color");
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-mail-tel a {
+  display: block;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: map-get($colors, "secondary-text-color");
+}
+.nav a:hover {
+  color: map-get($colors, "accent-color");
+}
+ul {
+  list-style: none;
+}
+nav .link-current {
+  color: map-get($colors, "accent-color");
+  position: relative;
+}
+.link-current::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: map-get($colors, "accent-color");
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+.centered {
+  text-align: center;
+}

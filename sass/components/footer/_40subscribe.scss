@@ -1,0 +1,82 @@
+.subscribe {
+  display: block;
+  width: 570px;
+  height: 86px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.subscribe form {
+  display: block;
+  display: flex;
+  flex-direction: row;
+}
+.subscribe p {
+  display: block;
+  width: 219px;
+  height: 16px;
+  margin-bottom: 20px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: $main-font-spacing;
+  text-transform: uppercase;
+  color: map-get($colors, "logo-accent-footer");
+}
+.subscribe input {
+  display: block;
+  color: map-get($colors, "logo-accent-footer");
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2785px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: map-get($colors, "header-footer-bg");
+}
+.subscribe button {
+  display: block;
+  padding: 0;
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: $button-font-spacing;
+  color: map-get($colors, "logo-accent-footer");
+  background: map-get($colors, "accent-color");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+.sub-text {
+  margin-left: 29px;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: map-get($colors, "logo-accent-footer");
+  margin-left: 10px;
+}
+.join p {
+  padding: 0;
+  font-size: 14px;
+  font-family: $primary-font;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: $main-font-spacing;
+  text-transform: uppercase;
+  color: map-get($colors, "logo-accent-footer");
+}
