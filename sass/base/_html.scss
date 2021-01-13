@@ -6,7 +6,10 @@
 body {
   background-color: map-get($colors, "logo-accent-footer");
   color: map-get($colors, "logo-accent-header");
-  font-family: "Roboto400", sans-serif;
+  font-family: $primary-font;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: $main-font-spacing;
   margin: 0;
 }
 img {
@@ -17,10 +20,24 @@ a {
   font-style: normal;
 }
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
   /*outline: 2px solid tomato;*/
+
+  @media screen and (min-width: $mobile) {
+    width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 768px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+  }
+}
+.hide {
+  display: none;
+  margin: 0;
 }

@@ -1,12 +1,31 @@
-.nav {
-  display: block;
-  display: flex;
-  padding-left: 0;
-  margin-left: 93px;
-  letter-spacing: $main-font-spacing;
+@media screen and (max-width: $tablet - 1px) {
+  .nav {
+    display: none;
+  }
 }
-.nav a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
+.menu-header {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 15px;
+  top: 10px;
 }
+
+/* ------old desctop version----------
+
+@media screen and (min-width: $desktop) {
+  .nav {
+    display: block;
+    display: flex;
+    padding-left: 0;
+    margin-left: 93px;
+    letter-spacing: $main-font-spacing;
+  }
+  .nav a {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+   ------end old desctop version----------*/

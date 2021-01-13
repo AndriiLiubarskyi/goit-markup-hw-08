@@ -1,116 +1,198 @@
 .divpeople {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  height: 2791px;
+}
+
+.headtwo-team {
+  margin-bottom: 30px;
   margin-top: 0;
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.18;
+  color: map-get($colors, "primary-text-color");
 }
 .people {
-  @extend %flex-block;
   padding: 0;
-  margin-top: 50px;
-  padding-bottom: 0;
-  flex-wrap: wrap;
-  margin-bottom: 0;
-  letter-spacing: $main-font-spacing;
+}
+.people img {
+  width: 450px;
+}
+.name-team {
+  padding-top: 30px;
+}
+.name-team h3 {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: map-get($colors, "primary-text-color");
+}
+.name-team p {
+  margin: 0 0 16px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: map-get($colors, "secondary-text-color");
 }
 .people .item {
+  width: 450px;
+  height: 622px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   border-radius: 0 0 4px 4px;
-  width: 270px;
   background-color: map-get($colors, "logo-accent-footer");
-  margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.people .item:nth-child(4n) {
-  margin-right: 0;
-}
-.people .item:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.name-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.people h3 {
-  text-align: center;
-  font-size: 16px;
-  font-family: $primary-font;
-  font-weight: 500;
-  letter-spacing: $main-font-spacing;
-  color: map-get($colors, "primary-text-color");
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.people p {
-  text-align: center;
-  font-size: 16px;
-  font-family: $primary-font;
-  font-weight: 400;
-  letter-spacing: $main-font-spacing;
-  color: map-get($colors, "secondary-text-color");
-  margin-top: 10px;
-  margin-bottom: 16px;
-}
-.socials-list,
-.socials-listf {
-  @extend %flex-center;
-  width: 100%;
-}
-.socials-list {
-  padding-left: 0;
-}
-.socials-list li {
-  margin-right: 10px;
-}
-.socials-list li:last-child {
-  margin-right: 0;
-}
-.socials-listf {
-  margin-top: 20px;
-  padding: 0;
-}
-.socials-icon,
-.socials-iconf {
-  @extend %flex-center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: map-get($colors, "company-icon");
-  background-color: rgba(255, 255, 255, 0.1);
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socials-list,
-.socials-listf li {
-  margin-right: 10px;
-}
-.socials-list,
-.socials-listf li:nth-child(4n) {
-  margin-right: 0;
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
 
-.social-svg {
-  fill: map-get($colors, "secondary-text-color");
-  fill: currentColor;
+.team .divpeople {
+  padding-top: 60px;
+  background-color: map-get($colors, "button-color");
 }
-.socials-iconf {
-  fill: map-get($colors, "logo-accent-footer");
-  &:focus,
-  &:hover {
+.socials-list {
+  @extend %flex-center;
+  flex-wrap: wrap;
+  margin: 0 122px 0 122px;
+  width: 206px;
+  height: 44px;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ------old desctop version----------
+
+@media screen and (min-width: $desktop) {
+  .divpeople {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+  }
+  .people {
+    display: block;
+    display: flex;
+    padding: 0;
+    margin-top: 50px;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    letter-spacing: $main-font-spacing;
+  }
+  .people .item {
+    border-radius: 0 0 4px 4px;
+    width: 270px;
+    background-color: map-get($colors, "logo-accent-footer");
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .people .item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .people .item:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .name-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .people h3 {
+    text-align: center;
+    font-size: 16px;
+    font-family: $primary-font;
+    font-weight: 500;
+    letter-spacing: $main-font-spacing;
+    color: map-get($colors, "primary-text-color");
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .people p {
+    text-align: center;
+    font-size: 16px;
+    font-family: $primary-font;
+    font-weight: 400;
+    letter-spacing: $main-font-spacing;
+    color: map-get($colors, "secondary-text-color");
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  .socials-list,
+  .socials-listf {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .socials-list {
+    padding-left: 0;
+  }
+  .socials-list li {
+    margin-right: 10px;
+  }
+  .socials-list li:last-child {
+    margin-right: 0;
+  }
+  .socials-listf {
+    margin-top: 20px;
+    padding: 0;
+  }
+  .socials-icon,
+  .socials-iconf {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: map-get($colors, "company-icon");
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .socials-list,
+  .socials-listf li {
+    margin-right: 10px;
+  }
+  .socials-list,
+  .socials-listf li:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .social-svg {
+    fill: map-get($colors, "secondary-text-color");
+    fill: currentColor;
+  }
+  .socials-iconf {
+    fill: map-get($colors, "logo-accent-footer");
+    &:focus,
+    &:hover {
+      background-color: map-get($colors, "icon-bg-hover");
+      color: map-get($colors, "logo-accent-footer");
+    }
+  }
+  .socials-list .socials-icon:focus,
+  .socials-list .socials-icon:hover {
     background-color: map-get($colors, "icon-bg-hover");
     color: map-get($colors, "logo-accent-footer");
   }
+  .team {
+    background-color: map-get($colors, "button-color");
+  }
 }
-.socials-list .socials-icon:focus,
-.socials-list .socials-icon:hover {
-  background-color: map-get($colors, "icon-bg-hover");
-  color: map-get($colors, "logo-accent-footer");
-}
-.team {
-  background-color: map-get($colors, "button-color");
-}
+
+ ------end old desctop version----------*/
