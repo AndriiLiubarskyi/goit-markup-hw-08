@@ -322,7 +322,7 @@ a {
   margin: 0;
 }
 
-.socials-list {
+.socials-list, .socials-list li, .customer-icon, .company-icon {
   display: block;
   display: flex;
   justify-content: center;
@@ -1048,6 +1048,8 @@ a {
  ------end old desctop version----------*/
 .divpeople {
   height: 2791px;
+  padding-top: 60px;
+  background-color: #f5f4fa;
 }
 
 .headtwo-team {
@@ -1107,9 +1109,12 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.team .divpeople {
-  padding-top: 60px;
-  background-color: #f5f4fa;
+.people .item:last-child {
+  margin-bottom: 0;
+}
+
+.people .item:nth-child(3) {
+  margin-bottom: 60px;
 }
 
 .socials-list {
@@ -1119,6 +1124,20 @@ a {
   height: 44px;
   list-style-type: none;
   padding: 0;
+}
+
+.socials-list li {
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.socials-list li:last-child {
+  margin-right: 0;
+}
+
+.social-svg {
+  fill: #afb1b8;
 }
 
 /* ------old desctop version----------
@@ -1250,6 +1269,56 @@ a {
 }
 
  ------end old desctop version----------*/
+.company-div {
+  padding-top: 60px;
+  height: 513px;
+}
+
+.regular-customers {
+  display: block;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+.comp-items {
+  margin: 0 30px 30px 0;
+}
+
+.comp-items:nth-child(2n) {
+  margin-right: 0;
+}
+
+.comp-items:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.customer-icon {
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-icon {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 210px;
+  height: 90px;
+  fill: #afb1b8;
+  transition-property: fill, border-color;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icon:hover, .company-icon:focus {
+  border-color: #2196f3;
+  fill: #2196f3;
+}
+
 /* ------old desctop version----------
 
 @media screen and (min-width: $desktop) {
