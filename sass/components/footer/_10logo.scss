@@ -1,4 +1,27 @@
-/* ------old desctop version----------*/
+footer {
+  @extend %flex-center;
+  text-align: center;
+  background-color: map-get($colors, "header-footer-bg");
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address-footer,
+.socials-listf {
+  list-style-type: none;
+}
+.logo-web {
+  font-size: 24px;
+  line-height: 1.17;
+  color: map-get($colors, "accent-color");
+}
+
+.logo-studiotwo {
+  font-size: 24px;
+  line-height: 1.17;
+  color: map-get($colors, "logo-accent-footer");
+}
+
+/* ------old desctop version----------
 
 @media screen and (min-width: $desktop) {
   .logo {
@@ -33,4 +56,4 @@
   }
 }
 
-/* ------end old desctop version----------*/
+ ------end old desctop version----------*/

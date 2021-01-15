@@ -12,20 +12,20 @@
   margin-top: 0;
 }
 .comp-items {
-  margin: 0 30px 30px 0;
-  &:nth-child(2n) {
+  margin: 15px;
+  /* &:nth-child(2n) {
     margin-right: 0;
   }
   &:nth-last-child(-n + 2) {
     margin-bottom: 0;
-  }
+  }*/
 }
 .customer-icon {
   @extend %flex-center;
   flex-wrap: wrap;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: -15px;
 }
 .company-icon {
   @extend %flex-center;
@@ -40,7 +40,7 @@
     fill: map-get($colors, "accent-color");
   }
   transition-property: fill, border-color;
-  transition-duration: 750ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ------old desctop version----------
