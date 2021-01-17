@@ -1,15 +1,35 @@
 @media screen and (max-width: $tablet - 1px) {
-  .nav {
+  .one {
     display: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 
-.menu-header {
+.menu-button {
+  display: inline-flex;
   background-color: transparent;
   border: none;
   position: absolute;
   right: 15px;
   top: 10px;
+}
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button .is-open .icon-cross {
+  display: block;
+}
+.menu-button .is-open .icon-menu {
+  display: none;
+}
+.menu-container {
+  display: block;
+  width: 20px;
+  text-align: center;
+  left: 0;
 }
 
 /* ------old desctop version----------

@@ -1,3 +1,23 @@
+.address-footer,
+.socials-listf {
+  list-style-type: none;
+}
+.address-footer a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: map-get($colors, "logo-accent-footer");
+}
+.address-footer .address-mail-tel {
+  color: map-get($colors, "contacts-color-footer");
+}
+.address-footer {
+  padding: 0;
+  margin: 20px auto 60px auto;
+}
+.address-footer li {
+  margin-bottom: 8px;
+}
 /* ------old desctop version----------
 
 @media screen and (min-width: $desktop) {
