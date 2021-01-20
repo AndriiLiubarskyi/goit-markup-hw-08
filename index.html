@@ -22,57 +22,61 @@
         <div class="container one">
             <nav class="navbox">
                 <a href="/"><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a>
-                <ul class="nav marginzero">
-                    <li>
-                        <a href="./index.html" class="link-current">
-                            Студия
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./portfolio.html">
-                            Портфолио
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Контакты
-                        </a>
-                    </li>
-                </ul>
             </nav>
-            <ul class="nav-mail-tel">
-                <li>
-                    <div class="mail-letter">
-                        <a href="mailto:info@devstudio.com">
-                            <svg class="letter" >
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                            </svg>
-                            info@devstudio.com
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tel-letter">
-                        <a href="tel:+380961111111">
-                            <svg class="vector">
-                                <use href="./images/sprite.svg#icon-Vector"></use>
-                            </svg>
-                        +38 096 111 11 11
-                        </a>
-                    </div>
-                </li>
-            </ul>
+            <div class="menu-container" id="menu-container"
+            data-menu>
+                <div class="navigation">
+                    <ul class="nav marginzero">
+                        <li>
+                            <a href="./index.html" class="link-current">
+                                Студия
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./portfolio.html">
+                                Портфолио
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+                <div class="contacts">
+                    <ul class="nav-mail-tel">
+                        <li>
+                            <div class="mail-letter">
+                                <a href="mailto:info@devstudio.com">
+                                    <svg class="letter" width="16" height="11.2">
+                                    <use href="./images/sprite.svg#icon-envelope"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tel-letter">
+                                <a href="tel:+380961111111">
+                                    <svg class="vector" width="10" height="14.9">
+                                        <use href="./images/sprite.svg#icon-Vector"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
             <button type="button" class="menu-button is-open" 
             aria-expanded="false"
             data-menu-button>
             <svg width="40" height="40" aria-label="Переключатель мобильного меню"> 
-                <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
                 <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                <use class="icon-cross" href="./images/sprite.svg#close-menu"></use>
             </svg>
             </button>
-            <div class="menu-container">
-                    меню
-            </div>
         </div>
     </header>
 
@@ -554,18 +558,18 @@
             }
         
     </script>
-        <script>
-            (() => {
+    <script>
+        (() => {
                     const menuBtnRef = document.querySelector("[data-menu-button]");
                     const mobileMenuRef = document.querySelector("[data-menu]");
-                    menuBtnRef.addEventListener("click", () => {
+                menuBtnRef.addEventListener("click", () => {
                     const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
                     menuBtnRef.classList.toggle("is-open");
                     menuBtnRef.setAttribute("aria-expanded", !expanded);
-                        /*mobileMenuRef.classList.toggle("is-open");*/
+                    mobileMenuRef.classList.toggle("is-open");
                     });
                 })();
-        </script>
+    </script>
 
 
 </body>

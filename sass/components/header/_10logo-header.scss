@@ -1,11 +1,26 @@
+header {
+  position: sticky;
+  top: 0;
+}
+
 .one {
+  background-color: map-get($colors, "logo-accent-footer");
   position: relative;
-  border-bottom: 1px solid #ececec;
-  height: 60px;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  top: 0;
+  width: 100%;
+  min-width: 480px;
   font-size: 24px;
   line-height: 1.17;
+  margin: 0;
+  padding: 0;
+}
+.navbox {
+  padding: 16px 0 16px 15px;
+  display: block;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo-web,

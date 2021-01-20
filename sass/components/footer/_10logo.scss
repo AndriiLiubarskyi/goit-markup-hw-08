@@ -4,6 +4,7 @@ footer {
   background-color: map-get($colors, "header-footer-bg");
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: $mobile;
 }
 .logo-web {
   font-size: 24px;

@@ -1,9 +1,28 @@
-@media screen and (max-width: $desktop) {
-  .nav-mail-tel {
-    display: none;
-  }
+.contacts {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 58px;
 }
-
+.nav-mail-tel li {
+  display: block;
+}
+.nav-mail-tel a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: map-get($colors, "secondary-text-color");
+}
+.mail-letter {
+  margin-bottom: 16px;
+}
+.letter,
+.vector {
+  margin-right: 10px;
+  fill: map-get($colors, "secondary-text-color");
+}
 /* ------old desctop version----------*
 
 @media screen and (min-width: $desktop) {
