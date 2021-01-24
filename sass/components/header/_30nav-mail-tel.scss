@@ -4,6 +4,10 @@
   flex-direction: column;
   justify-content: center;
   height: 58px;
+  @media screen and (min-width: 768px) {
+    height: 38px;
+    width: 138px;
+  }
 }
 .nav-mail-tel li {
   display: block;
@@ -14,14 +18,48 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: map-get($colors, "secondary-text-color");
+  @media screen and (min-width: 768px) {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    line-height: 1.16;
+    width: 138px;
+    height: 14px;
+  }
 }
 .mail-letter {
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    width: 138px;
+    height: 14px;
+  }
 }
 .letter,
 .vector {
   margin-right: 10px;
   fill: map-get($colors, "secondary-text-color");
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+}
+.letter {
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 14px;
+    height: 10px;
+  }
+}
+.vector {
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 10px;
+    height: 14px;
+  }
 }
 /* ------old desctop version----------*
 

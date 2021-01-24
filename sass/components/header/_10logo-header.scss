@@ -1,26 +1,38 @@
-header {
-  position: sticky;
-  top: 0;
-}
-
-.one {
+header .one {
   background-color: map-get($colors, "logo-accent-footer");
   position: relative;
+  padding: 0;
   top: 0;
   width: 100%;
   min-width: 480px;
   font-size: 24px;
   line-height: 1.17;
   margin: 0;
-  padding: 0;
+  @media screen and(min-width: 768px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 768px;
+    padding: 0 15px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid map-get($colors, "border");
+  }
 }
 .navbox {
   padding: 16px 0 16px 15px;
   display: block;
-  height: 60px;
   width: 100%;
-  margin: auto;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid map-get($colors, "border");
+  @media screen and(min-width: 768px) {
+    border: none;
+    width: 134px;
+    height: 28px;
+    padding: 0;
+    margin: 0 88px 0 0;
+  }
 }
 
 .logo-web,
