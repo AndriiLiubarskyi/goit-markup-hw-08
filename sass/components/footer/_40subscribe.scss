@@ -5,6 +5,12 @@
   color: map-get($colors, "logo-accent-footer");
   margin: 0 auto 20px auto;
 }
+.join {
+  @media screen and(min-width: 768px) {
+    margin-bottom: 102px;
+    padding-top: 5px;
+  }
+}
 .socials-listf {
   padding: 0;
   @extend %flex-center;
@@ -12,6 +18,9 @@
   width: 206px;
   height: 44px;
   margin: 0 auto 60px auto;
+  @media screen and(min-width: 768px) {
+    margin: 0;
+  }
 }
 .socials-listf li {
   @extend %flex-center;

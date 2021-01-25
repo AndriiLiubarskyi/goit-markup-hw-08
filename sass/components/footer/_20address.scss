@@ -14,9 +14,15 @@
 .address-footer {
   padding: 0;
   margin: 20px auto 60px auto;
+  @media screen and(min-width: 768px) {
+    margin: 0;
+  }
 }
 .address-footer li {
   margin-bottom: 8px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 /* ------old desctop version----------
 

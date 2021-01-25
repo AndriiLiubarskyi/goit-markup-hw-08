@@ -1,8 +1,20 @@
 .divpeople {
   height: 2791px;
   width: 480px;
+  min-width: 100%;
   padding-top: 60px;
   background-color: map-get($colors, "button-color");
+  @media screen and (min-width: $tablet) {
+    height: 1285px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    min-width: 768px;
+  }
 }
 
 .headtwo-team {
@@ -15,19 +27,49 @@
 }
 .people {
   padding: 0;
+  margin: 0;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+    margin: -15px;
+    justify-content: center;
+  }
 }
-.people img {
+/*.people img {
   width: 450px;
+}*/
+.team-mobile {
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+.team-tablet {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 .name-team {
   padding-top: 30px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
 }
+
 .name-team h3 {
   margin: 0 0 10px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: map-get($colors, "primary-text-color");
+  @media screen and(min-width: 768px) {
+    width: 354px;
+    margin: 0 auto 10px auto;
+  }
 }
 .name-team p {
   margin: 0 0 16px 0;
@@ -35,6 +77,10 @@
   font-size: 16px;
   line-height: 1.19;
   color: map-get($colors, "secondary-text-color");
+  @media screen and(min-width: 768px) {
+    width: 354px;
+    margin: 0 auto 16px auto;
+  }
 }
 .people .item {
   width: 450px;
@@ -51,14 +97,19 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
+  /*&:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+  }*/
   &:last-child {
     margin-bottom: 0;
   }
   &:nth-child(3) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+    height: 536px;
+    margin: 15px;
   }
 }
 
@@ -70,6 +121,9 @@
   height: 44px;
   list-style-type: none;
   padding: 0;
+  @media screen and (min-width: $tablet) {
+    margin: 0 auto;
+  }
 }
 .socials-list li {
   @extend %flex-center;
