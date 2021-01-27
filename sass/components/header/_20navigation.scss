@@ -43,12 +43,18 @@
     justify-content: space-between;
     border-bottom: 1px solid map-get($colors, "border");
   }
+  @media screen and (min-width: 1200px) {
+    width: 932px;
+  }
 }
 .contacts .nav-mail-tel {
   display: block;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  @media screen and(min-width: 1200px) {
+    display: flex;
+  }
 }
 .navigation {
   width: 294px;
@@ -58,6 +64,8 @@
     width: 480px;
     height: 155px;
     margin: 0 auto 60px auto;
+  }
+  @media screen and(min-width: 1200px) {
   }
 }
 .navigation .nav {

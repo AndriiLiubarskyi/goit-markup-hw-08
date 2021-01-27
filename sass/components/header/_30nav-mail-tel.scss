@@ -1,5 +1,4 @@
 .contacts {
-  display: block;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,9 +7,27 @@
     height: 38px;
     width: 138px;
   }
+  @media screen and(min-width: 1200px) {
+    width: 340px;
+    height: 16px;
+  }
+}
+.nav-mail-tel {
+  @media screen and(min-width: 1200px) {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    width: 340px;
+  }
 }
 .nav-mail-tel li {
   display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
 }
 .nav-mail-tel a {
   font-weight: 500;
@@ -26,6 +43,22 @@
     line-height: 1.16;
     width: 138px;
     height: 14px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: map-get($colors, "accent-color");
+      fill: map-get($colors, "accent-color");
+    }
+  }
+  @media screen and(min-width: 1200px) {
+    width: 100%;
+    height: 16px;
+    font-size: 14px;
+    line-height: 1.14;
+    align-items: center;
+    justify-content: center;
   }
 }
 .mail-letter {
@@ -38,13 +71,27 @@
     width: 138px;
     height: 14px;
   }
+  @media screen and(min-width: 1200px) {
+    width: 161px;
+    margin: 0;
+  }
 }
+.tel-letter {
+  @media screen and(min-width: 1200px) {
+    width: 142px;
+    height: 16px;
+  }
+}
+
 .letter,
 .vector {
   margin-right: 10px;
   fill: map-get($colors, "secondary-text-color");
   @media screen and (min-width: 768px) {
     margin-right: 8px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-right: 10px;
   }
 }
 .letter {
@@ -53,12 +100,24 @@
     width: 14px;
     height: 10px;
   }
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+    fill: map-get($colors, "secondary-text-color");
+    fill: currentColor;
+  }
 }
 .vector {
   @media screen and (min-width: 768px) {
     display: block;
     width: 10px;
     height: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+    fill: map-get($colors, "secondary-text-color");
+    fill: currentColor;
   }
 }
 /* ------old desctop version----------*

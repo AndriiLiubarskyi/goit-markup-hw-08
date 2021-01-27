@@ -1,15 +1,22 @@
+.join {
+  @media screen and(min-width: 768px) {
+    margin-bottom: 102px;
+    padding-top: 5px;
+  }
+  @media screen and(min-width: 1200px) {
+    display: block;
+    width: 206px;
+    height: 80px;
+    margin: 0 93px 0 0;
+    padding-top: 12px;
+  }
+}
 .join p {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: map-get($colors, "logo-accent-footer");
   margin: 0 auto 20px auto;
-}
-.join {
-  @media screen and(min-width: 768px) {
-    margin-bottom: 102px;
-    padding-top: 5px;
-  }
 }
 .socials-listf {
   padding: 0;
@@ -20,6 +27,22 @@
   margin: 0 auto 60px auto;
   @media screen and(min-width: 768px) {
     margin: 0;
+  }
+}
+.subscribe {
+  @media screen and(min-width: 1200px) {
+    padding-top: 12px;
+    width: 570px;
+    height: 86px;
+  }
+  & form {
+    @media screen and(min-width: 1200px) {
+      display: block;
+      display: flex;
+      flex-direction: row;
+      width: 570px;
+      height: 50px;
+    }
   }
 }
 .socials-listf li {
@@ -59,6 +82,11 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
+  @media screen and(min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 .subscribe button {
   @extend %flex-center;
@@ -83,6 +111,34 @@
   margin-left: 10px;
   fill: map-get($colors, "logo-accent-footer");
 }
+.socials-iconf {
+  @media screen and(min-width: 1200px) {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: map-get($colors, "company-icon");
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.socials-iconf {
+  @media screen and(min-width: 1200px) {
+    fill: map-get($colors, "logo-accent-footer");
+    &:focus,
+    &:hover {
+      background-color: map-get($colors, "icon-bg-hover");
+      color: map-get($colors, "logo-accent-footer");
+    }
+  }
+}
+
 /* ------old desctop version----------
 
 @media screen and (min-width: $desktop) {

@@ -5,6 +5,9 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   min-width: $mobile;
+  @media screen and(min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-div {
   @media screen and(min-width: 768px) {
@@ -18,7 +21,23 @@ footer {
   @media screen and(min-width: 768px) {
     margin: 0 168px 60px 0;
   }
+  @media screen and(min-width: 1200px) {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 231px;
+    height: 132px;
+    margin: 0 70px 0 0;
+  }
 }
+
+.cont-footer > a {
+  @media screen and(min-width: 1200px) {
+    display: block;
+  }
+}
+
 .logo {
   @media screen and(min-width: 768px) {
     display: block;
@@ -29,12 +48,20 @@ footer {
   font-size: 24px;
   line-height: 1.17;
   color: map-get($colors, "accent-color");
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-studiotwo {
   font-size: 24px;
   line-height: 1.17;
   color: map-get($colors, "logo-accent-footer");
+  @media screen and(min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 /* ------old desctop version----------

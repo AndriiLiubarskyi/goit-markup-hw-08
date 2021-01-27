@@ -15,6 +15,10 @@
     width: 100%;
     min-width: 768px;
   }
+  @media screen and (min-width: $desktop) {
+    min-width: 1200px;
+    height: 708px;
+  }
 }
 
 .headtwo-team {
@@ -24,6 +28,11 @@
   font-size: 28px;
   line-height: 1.18;
   color: map-get($colors, "primary-text-color");
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .people {
   padding: 0;
@@ -36,10 +45,11 @@
     margin: -15px;
     justify-content: center;
   }
+  @media screen and (min-width: $desktop) {
+    width: 1200px;
+    height: 520px;
+  }
 }
-/*.people img {
-  width: 450px;
-}*/
 .team-mobile {
   @media screen and(min-width: 768px) {
     display: none;
@@ -49,7 +59,18 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
   @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.team-desktop {
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -57,6 +78,11 @@
   padding-top: 30px;
   @media screen and(min-width: 768px) {
     width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -70,6 +96,10 @@
     width: 354px;
     margin: 0 auto 10px auto;
   }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 270px;
+  }
 }
 .name-team p {
   margin: 0 0 16px 0;
@@ -80,6 +110,10 @@
   @media screen and(min-width: 768px) {
     width: 354px;
     margin: 0 auto 16px auto;
+  }
+  @media screen and (min-width: $desktop) {
+    display: block;
+    width: 270px;
   }
 }
 .people .item {
@@ -102,14 +136,24 @@
   }*/
   &:last-child {
     margin-bottom: 0;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
   }
   &:nth-child(3) {
     margin-bottom: 60px;
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 15px;
+    }
   }
   @media screen and (min-width: $tablet) {
     width: 354px;
     height: 536px;
     margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 428px;
   }
 }
 
@@ -122,6 +166,11 @@
   list-style-type: none;
   padding: 0;
   @media screen and (min-width: $tablet) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 206px;
+    height: 44px;
     margin: 0 auto;
   }
 }
@@ -137,6 +186,38 @@
 }
 .social-svg {
   fill: map-get($colors, "company-icon");
+}
+
+.socials-icon {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: map-get($colors, "company-icon");
+  background-color: rgba(255, 255, 255, 0.1);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-svg {
+  fill: map-get($colors, "secondary-text-color");
+  fill: currentColor;
+}
+.socials-icon {
+  fill: map-get($colors, "logo-accent-footer");
+  &:focus,
+  &:hover {
+    background-color: map-get($colors, "icon-bg-hover");
+    color: map-get($colors, "logo-accent-footer");
+  }
+}
+.socials-list .socials-icon:focus,
+.socials-list .socials-icon:hover {
+  background-color: map-get($colors, "icon-bg-hover");
+  color: map-get($colors, "logo-accent-footer");
 }
 
 /* ------old desctop version----------

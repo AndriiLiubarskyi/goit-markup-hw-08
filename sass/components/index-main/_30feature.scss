@@ -1,3 +1,20 @@
+.specialty {
+  list-style-type: none;
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: 768px;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 270px;
+    display: block;
+    display: flex;
+    flex-direction: row;
+  }
+}
 .specialty .icon {
   display: block;
   width: 70px;
@@ -14,6 +31,9 @@
   @media screen and (min-width: 768px) {
     text-align: left;
   }
+  @media screen and (min-width: 1200px) {
+    width: 251px;
+  }
 }
 .specialty div {
   display: flex;
@@ -27,6 +47,9 @@
   }
   background-color: map-get($colors, "button-color");
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .specialty p {
   font-weight: 400;
@@ -38,40 +61,40 @@
   @media screen and (min-width: $tablet) {
     display: block;
   }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .specialty .item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: 354px;
     height: 251px;
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: 25%;
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
+    width: 270px;
+    display: block;
   }
 }
 .feature {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    height: 439px;
+    margin: 0 auto;
+  }
 }
 /*.specialty .item {
     display: block;
     width: 450px;
   }*/
-.specialty {
-  list-style-type: none;
-  padding-left: 0;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    width: 768px;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
-}
 
 /* ------old desctop version----------
 

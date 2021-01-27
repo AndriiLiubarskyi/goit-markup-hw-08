@@ -10,6 +10,13 @@
     line-height: 1.62;
     letter-spacing: $button-font-spacing;
   }
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.37;
+    text-align: center;
+  }
 }
 .heroorder {
   text-align: center;
@@ -30,6 +37,15 @@
     url(../images/headone-mobile.jpg);
   height: 400px;
   padding: 118px 60px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .heroorder {
+      background-image: url(../images/headone-mobile@2x.jpg);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     width: 768px;
     height: 400px;
@@ -41,7 +57,41 @@
       url(../images/headone-tablet.jpg);
     padding: 118px 60px;
   }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .heroorder {
+      background-image: url(../images/headone-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/headone.jpg);
+    padding-top: 200px;
+    background-size: auto;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .heroorder {
+        background-image: url(../images/headone@2x.jpg);
+      }
+    }
+  }
 }
+.hero {
+  @media screen and (min-width: 1200px) {
+    display: block;
+    display: flex;
+  }
+}
+
 .button-order {
   display: block;
   text-align: center;
